@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Main {
+public class Assignment1 {
 
     static void taskOne (short a, short b){
         if(a>b){
