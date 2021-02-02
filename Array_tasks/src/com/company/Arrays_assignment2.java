@@ -29,17 +29,17 @@ public class Arrays_assignment2 {
         System.out.println("\n In current array " + counter + " elements are odd!");
     }
 
-    public static void multipleElements() {
-        int counter = 0;
+    public static boolean areMultipleElements() {
         for (int i = 0; i < newArr.length; i++) {
-            for (int j = i + 1; j < newArr.length; j++) {
-                if (newArr[i] == newArr[j]) {
-                    counter++;
+            for (int j = 0; j < newArr.length; j++) {
+                if (newArr[i] == newArr[j] && i!=j) {
+                    return true;
                 }
             }
-        }
-        System.out.println("\n In current array " + counter + " elements are equal!");
+        } return false;
     }
+
+
 
     public static void printSecond() {
         for (int i = 0; i < newArr.length; i++) {
@@ -78,7 +78,11 @@ public class Arrays_assignment2 {
         System.out.print("In this array odd elements are: \n");
         printOdd();
         printCountOdd();
-        multipleElements();
+        if (areMultipleElements()){
+            System.out.println("There are multiple elements with the same value!");
+        } else{
+            System.out.println("There are no multiple elements with the same value!");
+        };
         System.out.print("In this array each second elements are: \n");
         printSecond();
         computeAverage();
