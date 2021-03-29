@@ -70,10 +70,10 @@ public class Main {
         System.out.println();
 
         //create new officer
-        Officer officer4 = officerCreator();
-        district99.add(officer4);
-        System.out.println("New arraylist:\n" + district99);
-        System.out.println("New arraylist size: " + district99.size());
+        //Officer officer4 = officerCreator();
+        //district99.add(officer4);
+        //System.out.println("New arraylist:\n" + district99);
+       // System.out.println("New arraylist size: " + district99.size());
 
 
     }
